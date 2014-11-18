@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!--
+/***************************************************************************
+	@extension	: Bestseller Product.
+	@copyright	: Copyright (c) 2014 Capacity Web Solutions.
+	( http://www.capacitywebsolutions.com )
+	@author		: Capacity Web Solutions Pvt. Ltd.
+	@support	: magento@capacitywebsolutions.com
+***************************************************************************/
+-->
+<config>
+    <global>
+        <modules>
+            <Project_Bestseller>
+                <version>1.1.7</version>
+            </Project_Bestseller>
+        </modules>
+        <blocks>
+            <bestseller>
+                <class>Project_Bestseller_Block</class>
+            </bestseller>
+        </blocks>
+    </global>
+
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <bestseller>
+                                            <title>Bestseller Section</title>
+                                        </bestseller>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+    <default> <!-- Default text value set from admin-->
+        <bestseller>
+            <general>
+                <enabled>1</enabled>
+                <heading>BESTSELLER PRODUCTS</heading>
+                <number_of_items>6</number_of_items>
+                <thumbnail_height>135</thumbnail_height>
+                <thumbnail_width>135</thumbnail_width>
+                <time_period>60</time_period>
+                <products_price>1</products_price>
+                <review>1</review>
+                <add_to_cart>1</add_to_cart>
+                <active>1</active>
+                <add_to_compare>1</add_to_compare>
+            </general>
+        </bestseller>
+    </default>
+</config>

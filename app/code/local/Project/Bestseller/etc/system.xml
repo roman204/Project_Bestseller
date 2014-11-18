@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<!--
+/***************************************************************************
+	@extension	: Bestseller Product.
+	@copyright	: Copyright (c) 2014 Capacity Web Solutions.
+	( http://www.capacitywebsolutions.com )
+	@author		: Capacity Web Solutions Pvt. Ltd.
+	@support	: magento@capacitywebsolutions.com	
+***************************************************************************/
+-->
+<config>
+    <tabs>
+        <cws>
+            <label>Bestseller</label>
+            <sort_order>100</sort_order>
+        </cws>
+    </tabs>
+    <sections>
+        <bestseller translate="label">
+            <class>separator-top</class>
+            <label>Best Seller Products</label>
+            <tab>cws</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>40</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+							<label>Enabled</label>	
+							<comment>Select Yes for display the Bestseller Products Extension on frontend.</comment>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<frontend_type>select</frontend_type>
+							<sort_order>0</sort_order>
+							<show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</enabled> 				
+						<heading translate="label">
+                            <label>Heading</label>
+							<comment>Here, We can Set Heading.</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading>
+						<number_of_items translate="label comment">
+                            <label>Number Of Items in Main Block</label>
+                            <comment>Show Number of best seller products in main block</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </number_of_items>
+						<thumbnail_height translate="label">
+							<label>Thumbnail Width</label>
+							<comment>Default Thumbnail Width: 135px</comment>				
+							<frontend_type>text</frontend_type>
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</thumbnail_height> 
+						<thumbnail_width translate="label">
+							<label>Thumbnail Height </label>
+							<comment>Default Thumbnail Height: 135px</comment>				
+							<frontend_type>text</frontend_type>
+							<sort_order>5</sort_order>
+							<show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</thumbnail_width>
+						<time_period translate="label">
+							<label>Time Period</label>	
+							<comment>Days bestselling product. Default 60 days.</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>6</sort_order>
+							<show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</time_period>                    
+						<time_period translate="label">
+							<label>Time Period</label>	
+							<comment>Days bestselling product. Default 60 days.</comment>
+							<frontend_type>text</frontend_type>
+							<sort_order>7</sort_order>
+							<show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</time_period>                    
+					    <products_price translate="label">
+							<label>Show Products Price</label>	
+							<comment>Select Yes for display the Products Price on frontend.</comment>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<frontend_type>select</frontend_type>
+							<sort_order>8</sort_order>
+							<show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</products_price> 
+					    <review translate="label">
+							<label>Show Reviews Ratings</label>	
+							<comment>Select Yes for display the Reviews Ratings on frontend.</comment>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<frontend_type>select</frontend_type>
+							<sort_order>9</sort_order>
+							<show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</review> 
+						<add_to_cart translate="label">
+							<label>Add to Cart</label>	
+							<comment>Select Yes for display the Add to cart button on frontend.</comment>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<frontend_type>select</frontend_type>
+							<sort_order>10</sort_order>
+							<show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</add_to_cart> 
+   					    <wishlist translate="label">
+							<label>Add to Wishlist</label>	
+							<comment>Select Yes for display the Add to Wishlist Link on frontend.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </wishlist>
+						<add_to_compare translate="label">
+							<label>Add to Compare</label>	
+							<comment>Select Yes for display the Add to Compare Link on frontend.</comment>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<frontend_type>select</frontend_type>
+							<sort_order>12</sort_order>
+							<show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</add_to_compare>
+                        <out_of_stoke translate="label">
+							<label>Display out of stock items</label>	
+							<comment>Select Yes for display the out of stock items on frontend.</comment>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<frontend_type>select</frontend_type>
+							<sort_order>13</sort_order>
+							<show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</out_of_stoke> 
+					</fields>
+                </general>
+            </groups>
+        </bestseller>
+    </sections>
+</config>

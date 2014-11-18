@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Project_Bestseller>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Project_Bestseller>
+    </modules>
+</config>
